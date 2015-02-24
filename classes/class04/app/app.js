@@ -30,14 +30,6 @@ app.get('/', index.home);
 app.get('/getCat', getCat.getCatGET);
 app.post('/getCat', getCat.getCatPOST);
 
-app.get('/olin', function(req, res, next){
-  res.send('hello olin');
-  next();
-});
-
-app.post('/chelsea', function (req, res) {
-	res.send('YAY!');
-})
 
 app.listen(PORT, function () {
 	console.log("Application running on port:", PORT);
